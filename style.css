@@ -33,19 +33,17 @@ input {
   padding: 24px;
   margin: 10px;
   background: transparent;
-  box-shadow: 0px 3px 15px rgba(84, 84, 84, 0.4);
+  box-shadow: 0px 3px 15px rgba(84, 84, 84, 0.2);
   font-size: 40px;
   text-align: right;
   cursor: pointer;
   color: #ffffff;
+  border-radius: 10px;
 }
 input:hover {
-  box-shadow: 0px 3px 15px rgba(84, 84, 84, 0.8);
+  box-shadow: 0px 3px 15px rgba(84, 84, 84, 0.4);
 }
-input:active {
-  box-shadow: 0px 3px 15px rgba(84, 84, 84, 0.6);
-  border: none;
-}
+
 input:focus {
   outline: none; /* Remove the default outline on focus */
 }
@@ -90,4 +88,13 @@ button {
       rgba(255, 255, 255, 0.05) 100%
     ),
     #7f45e2;
+}
+
+.particles-js-canvas-el {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left:0;
 }
